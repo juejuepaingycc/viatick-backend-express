@@ -24,7 +24,7 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
         type: DataTypes.STRING,
       },
-      usage: {
+      energy_usage: {
         allowNull: false,
         type: DataTypes.INTEGER
       },

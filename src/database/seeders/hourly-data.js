@@ -17,7 +17,7 @@ const hourly_data = merged.map((d, index) => ({
   daily_id: d.daily_id,
   created_at: new Date(),
   updated_at: new Date(),
-  usage: Math.floor(Math.random() * 100)
+  energy_usage: Math.floor(Math.random() * 100)
 }));
 
 module.exports = {

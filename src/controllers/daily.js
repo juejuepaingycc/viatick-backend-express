@@ -15,7 +15,7 @@ exports.getDailyUsage = async (req, res) => {
     where: { date },
     include: [{
       model: models.Hourly,
-      attributes: [['time', 'label'], ['usage', 'value']],
+      attributes: [['time', 'label'], ['energy_usage', 'value']],
     }]
   })
 
