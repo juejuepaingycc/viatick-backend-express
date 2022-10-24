@@ -13,6 +13,14 @@ module.exports = {
         host: process.env.DEV_DB_HOST,
         dialect: 'mysql',
     },
+    // test: {
+    //     dialect: process.env.DB_DIALECT,
+    //     username: process.env.DB_USER,
+    //     password: process.env.DB_PASS,
+    //     database: process.env.DB_NAME_DEVELOPMENT,
+    //     host: process.env.DB_HOST,
+    //     port: process.env.DB_PORT,
+    //   },
     production: {
         use_env_variable: process.env.DATABASE_URL,
         username: process.env.PROD_DB_USERNAME,
