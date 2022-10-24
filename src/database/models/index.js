@@ -3,15 +3,15 @@
 const Sequelize = require('sequelize');
 
 const env = process.env.NODE_ENV || 'production';
-const dbConfig = require('../../config/db.config.js')['production']
+const dbConfig = require('../../config/db.config.js')
 
 const db = {};
 
 let sequelize = new Sequelize(
-  dbConfig.database,
-  dbConfig.username,
-  dbConfig.password,
-  dbConfig
+  dbConfig.production.database,
+  dbConfig.production.username,
+  dbConfig.production.password,
+  dbConfig.production
 );
 
 db.Daily = require('./daily.js')(sequelize, Sequelize.DataTypes)
