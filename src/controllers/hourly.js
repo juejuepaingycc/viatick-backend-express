@@ -25,7 +25,7 @@ exports.getHourlyUsage = async (req, res) => {
       
     return res.status(400).json({
       status: 'fail',
-      message: 'Something wrong!!!'
+      message: err.message
     });
   }
 };
